@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/fragment_one">
+
+
+    <TextView
+        android:id="@+id/alarm_item_abc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/smarttask"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+
+
+    <ToggleButton
+        android:id="@+id/alarm_item_toggle"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/alarm_item_abc"/>
+
+
+    <View
+        android:id="@+id/divider7"
+        style="@style/Divider"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/alarm_item_toggle" />
+
+
+    <TextView
+        android:id="@+id/alarm_dest_abc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/smartdest"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/divider7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+
+
+    <ToggleButton
+        android:id="@+id/alarm_dest_toggle"
+        android:layout_below="@+id/divider7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/alarm_dest_abc"/>
+
+    <View
+        android:id="@+id/divider8"
+        style="@style/Divider"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/alarm_dest_toggle" />
+
+    <TextView
+        android:id="@+id/alarm_device_abc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/smartdevices"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/divider8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+
+
+    <ToggleButton
+        android:id="@+id/alarm_device_toggle"
+        android:layout_below="@+id/divider8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/alarm_device_abc"/>
+
+
+
+
+
+
+</RelativeLayout>
